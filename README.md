@@ -1,40 +1,48 @@
-# Guardianes del Clima
+# Diseño de pantallas
 
-Juego educativo para niños en el que una niña debe superar **cinco misiones ecológicas** para convertirse en Guardiana del Clima. En cada escenario el jugador resuelve una tarea relacionada con el cuidado del medio ambiente (ahorrar energía, cuidar el agua, plantar árboles, separar o tirar correctamente la basura). Si responde bien, recibe una felicitación y avanza; si se equivoca, puede intentarlo de nuevo.
+Diseño en línea (Figma / Canva): [Ver diseño en Canva](https://canva.link/lqgznsqtpk64h8v)
 
-## Integrantes
+Suban a esta carpeta las imágenes PNG exportadas con los nombres indicados abajo.
 
-| Nombre completo | Usuario de GitHub | Contacto (GitHub) |
+## Lista de pantallas
+
+| # | Pantalla | Archivo PNG |
 |---|---|---|
-| Roy Steven Cox Parales | `rscoxp` | [github.com/rscoxp](https://github.com/rscoxp) |
-| Jose Manuel Ramos Chavez | `jose-mrc` | [github.com/jose-mrc](https://github.com/jose-mrc) |
+| 1 | Pantalla principal | `01-inicio.png` |
+| 2 | Introducción de la historia | `02-introduccion.png` |
+| 3 | Escenario de misión | `03-mision.png` |
+| 4 | Retroalimentación | `04-retroalimentacion.png` |
+| 5 | Mapa de progreso | `05-progreso.png` |
+| 6 | Pantalla final | `06-final.png` |
 
-## Estructura del repositorio
+## 1. Pantalla principal
+- **Elementos:** título "Guardianes del Clima", ilustración de la protagonista con el planeta, botón grande **Jugar**.
+- **Acción:** Jugar lleva a la introducción (RF-01).
 
-```
-guardianes-del-clima/
-├── README.md
-├── 1-requerimientos/
-│   └── SRS.md
-├── 2-uml/
-│   ├── casos-de-uso.md
-│   ├── diagrama-de-clases.md
-│   └── diagrama-de-secuencia.md
-└── 3-pantallas/
-    ├── README.md
-    └── (imágenes PNG de las pantallas)
-```
+## 2. Introducción de la historia
+- **Elementos:** protagonista, globo de texto corto con su misión: convertirse en Guardiana del Clima superando cinco misiones, botón **Comenzar**.
+- **Acción:** Comenzar lleva a la misión 1 (RF-02).
 
-## Fases del ciclo de vida incluidas
+## 3. Escenario de misión
+- **Elementos:** fondo del escenario, objetos de la tarea (por ejemplo, focos encendidos, grifo abierto, árbol, basureros), pregunta o actividad en texto grande, indicador "Misión X de 5".
+- **Acción:** el jugador elige o arrastra la respuesta (RF-03, RF-04, RF-06).
+- **Temas sugeridos de las cinco misiones:** ahorrar energía, cuidar el agua, plantar árboles, separar la basura y tirar la basura en su lugar.
 
-1. **Análisis de requerimientos:** [SRS](1-requerimientos/SRS.md)
-2. **Diseño UML:** [Casos de uso](2-uml/casos-de-uso.md), [Clases](2-uml/diagrama-de-clases.md) y [Secuencia](2-uml/diagrama-de-secuencia.md)
-3. **Diseño de pantallas:** [Pantallas](3-pantallas/README.md)
+## 4. Retroalimentación
+- **Variante correcta:** mensaje positivo con estrella y botón **Siguiente**.
+- **Variante incorrecta:** mensaje de ánimo y botón **Intentar de nuevo**.
+- (RF-07, RF-08, RF-09)
 
-## Diseño de pantallas en línea
+## 5. Mapa de progreso
+- **Elementos:** cinco estrellas o insignias, las completadas en color y las pendientes en gris, botón **Continuar**.
+- (RF-10)
 
-Enlace al diseño en Figma / Canva: [Ver diseño en Canva](https://canva.link/lqgznsqtpk64h8v)
+## 6. Pantalla final
+- **Elementos:** mensaje "¡Felicidades! ¡Ahora eres Guardiana del Clima!", insignia final, botón **Jugar de nuevo**.
+- (RF-11, RF-12)
 
-## Antecedentes
-
-La educación climática ayuda a las personas a comprender la crisis climática y a actuar con responsabilidad (UNESCO). UNICEF reportó en 2024 que cerca de mil millones de niños viven en países con altos riesgos relacionados con el clima y el medio ambiente. Explicar el cuidado ambiental solo con teoría puede resultar poco atractivo para los niños, por lo que este proyecto propone practicar hábitos ambientales mediante misiones interactivas y entretenidas.
+## Consejos de diseño (requerimientos no funcionales)
+- Letra grande y colores con buen contraste (RNF-05).
+- Frases cortas y palabras simples (RNF-02).
+- Botones grandes y fáciles de distinguir (RNF-01).
+- No pedir nombre ni datos personales (RNF-06).
